@@ -15,7 +15,7 @@
 <!--    <input type="checkbox" name="hobby" value="football">足球<br/>-->
 <!--    <input type="submit" value="提交">
 </form>
---->
+
 <form name="form1" action="go.jsp" method="post">
     请选择:
     <select name="jump" onchange="submit()">
@@ -24,6 +24,30 @@
         <option value="2">中国海洋大学</option>
         <option value="3">青岛大学</option>
     </select>
+</form>
+--->
+<form action="answer.jsp" method="post">
+    <span> 考试系统</span>
+    <p>
+        请输入姓名：
+        <input type="text" name="name"><br>
+        请输入考好：
+        <input type="text" name="num">
+    </p>
+    <hr>
+        诗人李白是哪个朝代的人（）<br>
+        <input type="radio" name="q1" value="a">宋朝
+        <input type="radio" name="q1" value="b">唐朝
+        <input type="radio" name="q1" value="c">明朝
+        <input type="radio" name="q1" value="d">元朝
+        <br>
+        小说红楼梦的作者是（）<br>
+        <input type="radio" name="q2" value="a">曹雪芹
+        <input type="radio" name="q2" value="b">罗贯中
+        <input type="radio" name="q2" value="c">李白
+        <input type="radio" name="q2" value="d">司马迁
+        <br>
+       <input type="submit" value="提交">
 </form>
 
 </body>

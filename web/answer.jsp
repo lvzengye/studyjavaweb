@@ -23,13 +23,26 @@
     %>
 <p>您得了<%=n%>分
 ---%>
-<%! String Name;%>
+<%--<%! String Name;%>--%>
+<%--<%--%>
+<%--    Name=request.getParameter(UserName);--%>
+<%--    String s=new String("你喜欢的水果");--%>
+<%--    String[] paramValues=request.getParameterValues("checbox1");--%>
+<%--    for (int i=0;i<paramValues.length;i++){s+=paramValues[i]+"";}--%>
+<%--%>--%>
+<%--<%=Name%><br><%=s%>--%>
 <%
-    Name=request.getParameter(UserName);
-    String s=new String("你喜欢的水果");
-    String[] paramValues=request.getParameterValues("checbox1");
-    for (int i=0;i<paramValues.length;i++){s+=paramValues[i]+"";}
+    String name=request.getParameter("name");
+    String num=request.getParameter("num");
+    String answer1=request.getParameter("q1");
+    String answer2=request.getParameter("q2");
+    if (name!=null&&num!=null&&answer1!=null&&answer2!=null){
+        session.setAttribute("name",name);
+        session.setAttribute("num",num);
+        session.setAttribute("answer1",answer1);
+        session.setAttribute("answer2",answer2);
+    }
 %>
-<%=Name%><br><%=s%>
+<a href="answer1.jsp">查看考试结果及答案</a>
 </body>
 </html>
