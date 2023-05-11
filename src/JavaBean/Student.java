@@ -1,9 +1,9 @@
 package JavaBean;
 
 public class Student {
-    private String name="张三";
-    private int age=20;
-    private String sex="男";
+    private String name;
+    private int age;
+    private String sex;
 
     public String getName() {
         return name;
@@ -15,5 +15,17 @@ public class Student {
 
     public String getSex() {
         return sex;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }

@@ -12,6 +12,9 @@
 </head>
 <body>
  <jsp:useBean id="student" class="JavaBean.Student"></jsp:useBean>
+ <jsp:setProperty name="student" property="name" value="小蜜瓜"></jsp:setProperty>
+ <jsp:setProperty name="student" property="age" value="19"></jsp:setProperty>
+ <jsp:setProperty name="student" property="sex" value="女"></jsp:setProperty>
  <div>
    <ul>
 
